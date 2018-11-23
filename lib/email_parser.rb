@@ -11,12 +11,12 @@ class EmailParser
 
   def parse(emails)
     if @emails.match(/,/)
-      split = @emails.split(",")
+      split = @emails.split(", ")
       split.collect! do |emails|
         emails.split(" ")
       end
       split.flatten.uniq
-    end
+    else
     return @emails.split(" ").uniq
   end
 end
