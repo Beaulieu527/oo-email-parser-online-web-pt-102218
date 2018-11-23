@@ -20,3 +20,4 @@ class EmailParser
     return @emails.split(" ").uniq
   end
 end
+end
