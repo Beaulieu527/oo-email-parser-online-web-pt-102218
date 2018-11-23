@@ -11,9 +11,9 @@ class EmailParser
 
   def parse(emails)
     if @emails.match(/,/)
-      split = @emails.split(", ")
+      split = @emails.split(/\s|,/)
       split.each do |emails|
-
+        
       end
     end
     @emails.flatten
