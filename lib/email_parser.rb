@@ -16,6 +16,6 @@ class EmailParser
 
       end
     end
-    @emails.flatten
+    @emails.uniq
   end
 end
