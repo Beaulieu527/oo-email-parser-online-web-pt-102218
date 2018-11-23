@@ -17,4 +17,5 @@ class EmailParser
       end
     end
     @emails.flatten
+  end
 end
