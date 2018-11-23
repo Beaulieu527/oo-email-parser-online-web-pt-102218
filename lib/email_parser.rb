@@ -15,7 +15,7 @@ class EmailParser
       split.collect! do |emails|
         emails.split(" ")
       end
-      split.flatten.unique
+      split.flatten.uniq
     end
     return @emails.split(" ").uniq
   end
